@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ステータスとレーダーチャート</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-900 to-blue-600 flex items-center justify-center h-screen text-white">
+
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-5xl">
+        <h1 class="text-2xl font-bold text-center mb-6">ステータスとレーダーチャート</h1>
+
+        <div class="flex space-x-8 items-start">
+            <div class="w-1/3 space-y-6">
+                <div class="flex items-center space-x-4">
+                    <label for="name" class="font-semibold">名前:</label>
+                    <input type="text" id="name" class="border p-2 rounded-md w-full bg-gray-700 text-white" placeholder="名前を入力">
+                </div>
+                <ul class="space-y-4">
+                    <li class="flex justify-between">
+                        <span class="font-semibold">ステータス A:</span>
+                        <input type="number" id="statusA" class="border p-1 rounded w-20 bg-gray-700 text-white" value="65">
+                    </li>
+                    <li class="flex justify-between">
+                        <span class="font-semibold">ステータス B:</span>
+                        <input type="number" id="statusB" class="border p-1 rounded w-20 bg-gray-700 text-white" value="59">
+                    </li>
+                    <li class="flex justify-between">
+                        <span class="font-semibold">ステータス C:</span>
+                        <input type="number" id="statusC" class="border p-1 rounded w-20 bg-gray-700 text-white" value="90">
+                    </li>
+                    <li class="flex justify-between">
+                        <span class="font-semibold">ステータス D:</span>
+                        <input type="number" id="statusD" class="border p-1 rounded w-20 bg-gray-700 text-white" value="81">
+                    </li>
+                    <li class="flex justify-between">
+                        <span class="font-semibold">ステータス E:</span>
+                        <input type="number" id="statusE" class="border p-1 rounded w-20 bg-gray-700 text-white" value="56">
+                    </li>
+                </ul>
+                
+                <ul class="space-y-4 mt-6">
+                    <li class="flex justify-between">
+                        <span class="font-semibold">技 1:</span>
+                        <input type="text" id="skill1" class="border p-1 rounded w-full bg-gray-700 text-white" placeholder="技1">
+                    </li>
+                    <li class="flex justify-between">
+                        <span class="font-semibold">技 2:</span>
+                        <input type="text" id="skill2" class="border p-1 rounded w-full bg-gray-700 text-white" placeholder="技2">
+                    </li>
+                    <li class="flex justify-between">
+                        <span class="font-semibold">技 3:</span>
+                        <input type="text" id="skill3" class="border p-1 rounded w-full bg-gray-700 text-white" placeholder="技3">
+                    </li>
+                    <li class="flex justify-between">
+                        <span class="font-semibold">技 4:</span>
+                        <input type="text" id="skill4" class="border p-1 rounded w-full bg-gray-700 text-white" placeholder="技4">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-2/3">
+                <canvas id="myRadarChart" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
